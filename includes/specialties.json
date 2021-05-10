@@ -1,0 +1,69 @@
+{
+    "specialties": [
+        {
+            "vector": "alinhador-transparente",
+            "name": "Alinhador Transparente",
+            "description": "Invisalign"
+        },
+        {
+            "vector": "bichectomia",
+            "name": "Bichectomia",
+            "description": "Odontologia estética"
+        },
+        {
+            "vector": "bucomaxilo",
+            "name": "Bucomaxilo",
+            "description": "Bruxismo - ATM"
+        },
+        {
+            "vector": "clareamento-dental",
+            "name": "Clareamento Dental",
+            "description": "Dentes mais brancos"
+        },
+        {
+            "vector": "dentistica",
+            "name": "Dentística",
+            "description": "Estética Dental"
+        },
+        {
+            "vector": "endodontia",
+            "name": "Endodontia",
+            "description": "Tratamento para a polpa do dente"
+        },
+        {
+            "vector": "facetas-laminadas",
+            "name": "Facetas Laminadas",
+            "description": "Lentes de contato dental"
+        },
+        {
+            "vector": "harmonizacao-facial",
+            "name": "Harmonização Facial",
+            "description": "Estética"
+        },
+        {
+            "vector": "implantodontia",
+            "name": "Implantodontia",
+            "description": "Implantes dentários"
+        },
+        {
+            "vector": "odontopediatria",
+            "name": "Odontopediatria",
+            "description": "Saúde bucal infantil"
+        },
+        {
+            "vector": "ortodontia",
+            "name": "Ortodontia",
+            "description": "Aparelhos Dentários"
+        },
+        {
+            "vector": "peridontia",
+            "name": "Peridontia",
+            "description": "Tratamento para gengiva e demais estruturas bucais"
+        },
+        {
+            "vector": "reabilitacao-oral",
+            "name": "Reabilitação Oral",
+            "description": "Tratamentos odontológicos"
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+$blue: #01a3c8;
+$neutral: #1e202a;
+$dark-900: #1e202a;
+
+$colors: (
+    "blue": (
+        100: mix(white, $blue, 80%),
+        200: mix(white, $blue, 60%),
+        300: mix(white, $blue, 40%),
+        400: mix(white, $blue, 20%),
+        500: $blue,
+        600: mix(black, $blue, 20%),
+        700: mix(black, $blue, 40%),
+        800: mix(black, $blue, 60%),
+        900: mix(black, $blue, 80%),
+    ),
+    "neutral": (
+        100: mix(white, $neutral, 80%),
+        200: mix(white, $neutral, 60%),
+        300: mix(white, $neutral, 40%),
+        400: mix(white, $neutral, 20%),
+        500: $neutral,
+        600: mix(black, $neutral, 20%),
+        700: mix(black, $neutral, 40%),
+        800: mix(black, $neutral, 60%),
+        900: mix(black, $neutral, 80%),
+    ),
+    "dark": (
+        900: $dark-900,
+    ),
+);

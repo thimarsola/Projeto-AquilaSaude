@@ -1,0 +1,151 @@
+@use "../../abstracts" as *;
+
+.hero {
+    position: relative;
+    padding-top: 18rem;
+    padding-left: 18rem;
+    padding-bottom: 4rem;
+    max-width: 100vw;
+    max-height: 100vh;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background: {
+        image: url("../images/bg-home.svg");
+        size: cover;
+        position: center;
+    }
+
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        content: "";
+        width: 36%;
+        height: 83%;
+        background-color: var(--clr-dark-900);
+        z-index: -1;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        height: 100%;
+
+        &__image {
+            flex: 0 0 calc(44% - 5rem);
+            width: 100%;
+            height: 100%;
+
+            picture {
+                width: 100%;
+                height: 100%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+
+                    object: {
+                        fit: cover;
+                        position: center;
+                    }
+                }
+            }
+        }
+
+        &__content {
+            flex: 0 0 calc(56% - 5rem);
+
+            &__image {
+                margin-bottom: var(--fs-800);
+                position: relative;
+                max-height: 46.5rem;
+                height: 100%;
+
+                &::after {
+                    position: absolute;
+                    bottom: -1.2rem;
+                    right: 0;
+                    display: block;
+                    content: "";
+                    width: 86%;
+                    height: 1.2rem;
+                    background: var(--clr-blue-500);
+                    z-index: -1;
+                }
+
+                picture {
+                    height: 100%;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object: {
+                            fit: cover;
+                            position: top left;
+                        }
+                    }
+                }
+            }
+
+            &__text {
+                max-width: 64%;
+
+                &__header {
+                    margin-bottom: var(--fs-800);
+
+                    h2 {
+                        font-family: "Noto Serif Bold", serif !important;
+                        font-size: var(--fs-1000);
+
+                        span {
+                            color: var(--clr-blue-500);
+                        }
+                    }
+                }
+
+                p {
+                    margin-bottom: var(--fs-600);
+                    font-size: var(--fs-600);
+                    text-align: justify;
+                }
+
+                &__link {
+                    transform-origin: top;
+                    -webkit-animation: scroll 1500ms linear infinite alternate;
+                    animation: scroll 1500ms linear infinite alternate;
+                    i {
+                        font-size: 5rem;
+                        color: var(--clr-blue-500) !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@-webkit-keyframes scroll {
+    from {
+        transform: translateY(1.5rem);
+        @include transition(transform);
+    }
+    to {
+        transform: translateY(0);
+        @include transition(transform);
+    }
+}
+
+@keyframes scroll {
+    from {
+        transform: translateY(1.5rem);
+        @include transition(transform);
+    }
+    to {
+        transform: translateY(0);
+        @include transition(transform);
+    }
+}

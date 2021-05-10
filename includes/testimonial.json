@@ -1,0 +1,28 @@
+{
+    "testimonial": [
+        {
+            "name": "Deborah Oliveira",
+            "description": "Atendimento espetacular desde as recepcionista até os profissionais super qualificados e atenciosos!!!<br>Amamos tanto que a família toda já é paciente.<br>Além de moderna, fácil acesso, recomendo clínica nota 1000."
+        },
+        {
+            "name": "Boo Adriana Yukimitsu",
+            "description": "Maravilhosa! Espaço muito limpo, recepção extremamente atenciosa, a Dra Fernanda e as auxiliares foram uns amores. Sabe aquele cuidado que você vê que é com amor? Assim fomos atendidas. Recomendo totalmente!!!!"
+        },
+        {
+            "name": "Eliana Brandão",
+            "description": "Lugar de muito bom gosto e de qualidade. Atendimento de primeira e profissionais qualificados."
+        },
+        {
+            "name": "Saulo Roberto Cardim",
+            "description": "Eu e minha família somos clientes da clínica a muitos anos e sempre com atendimento exemplar, nessa nova fase ela está  ultra moderna atendendo novas e diversas especialidades.<br>Equipe e profissionais altamente capacitados e simpáticos.<br>Veio para continuar fazendo história em São Caetano.<br>Parabéns."
+        },
+        {
+            "name": "Aletea Lima",
+            "description": "Excelente atendimento :) as meninas (dentistas e recepção) são muito atenciosas, simpáticas!<br>Local extremamente limpo!<br>Dr. Marco Brandão um fofo.<br>Foi indicação de uma amiga e com certeza tb vou indicar!"
+        },
+        {
+            "name": "Vitor Versore",
+            "description": "Estrutura linda, profissionais super competentes e simpáticos. Com certeza a melhor clínica odontológica de São Caetano do Sul. Recomendo a todos"
+        }
+    ]
+}

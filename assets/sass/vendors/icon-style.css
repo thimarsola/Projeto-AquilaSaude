@@ -1,0 +1,133 @@
+@font-face {
+  font-family: 'aquila-icon';
+  src:  url('../font/aquila-icon/fonts/aquila-icon.eot?d4e755');
+  src:  url('../font/aquila-icon/fonts/aquila-icon.eot?d4e755#iefix') format('embedded-opentype'),
+    url('../font/aquila-icon/fonts/aquila-icon.ttf?d4e755') format('truetype'),
+    url('../font/aquila-icon/fonts/aquila-icon.woff?d4e755') format('woff'),
+    url('../font/aquila-icon/fonts/aquila-icon.svg?d4e755#aquila-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'aquila-icon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.aquila-arrow:before {
+  content: "\e901";
+  color: #01a3c8;
+}
+.aquila-down-arrow:before {
+  content: "\e915";
+  color: #01a3c8;
+}
+.aquila-small-arrow:before {
+  content: "\e91a";
+  color: #01a3c8;
+}
+.aquila-alinhador-transparente:before {
+  content: "\e900";
+  color: #01a3c8;
+}
+.aquila-bichectomia:before {
+  content: "\e902";
+  color: #01a3c8;
+}
+.aquila-bucomaxilo:before {
+  content: "\e903";
+  color: #01a3c8;
+}
+.aquila-clareamento-dental:before {
+  content: "\e904";
+  color: #01a3c8;
+}
+.aquila-dentistica:before {
+  content: "\e905";
+  color: #01a3c8;
+}
+.aquila-endodontia:before {
+  content: "\e906";
+  color: #01a3c8;
+}
+.aquila-facebook:before {
+  content: "\e907";
+  color: #fff;
+}
+.aquila-facetas-laminadas:before {
+  content: "\e908";
+  color: #01a3c8;
+}
+.aquila-harmonizacao-facial:before {
+  content: "\e909";
+  color: #01a3c8;
+}
+.aquila-implantodontia:before {
+  content: "\e90a";
+  color: #01a3c8;
+}
+.aquila-instagram:before {
+  content: "\e90b";
+  color: #fff;
+}
+.aquila-logo-rodape:before {
+  content: "\e90c";
+  color: #fff;
+}
+.aquila-logo-topo:before {
+  content: "\e90d";
+  color: #fff;
+}
+.aquila-logo:before {
+  content: "\e90e";
+}
+.aquila-mail:before {
+  content: "\e90f";
+  color: #01a3c8;
+}
+.aquila-odontopediatria:before {
+  content: "\e910";
+  color: #01a3c8;
+}
+.aquila-ortodontia:before {
+  content: "\e911";
+  color: #01a3c8;
+}
+.aquila-peridontia:before {
+  content: "\e912";
+  color: #01a3c8;
+}
+.aquila-phone:before {
+  content: "\e913";
+  color: #01a3c8;
+}
+.aquila-reabilitacao-oral:before {
+  content: "\e914";
+  color: #01a3c8;
+}
+.aquila-target:before {
+  content: "\e916";
+  color: #01a3c8;
+}
+.aquila-testimony:before {
+  content: "\e917";
+  color: #01a3c8;
+}
+.aquila-w3c:before {
+  content: "\e918";
+}
+.aquila-whatsapp:before {
+  content: "\e919";
+  color: #fff;
+}

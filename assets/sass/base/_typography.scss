@@ -1,0 +1,41 @@
+* {
+    font-family: "Open Sans Regular", sans-serif !important;
+}
+
+html {
+    font-size: var(--font-base) !important;
+    color: var(--clr-neutral-500);
+}
+
+body {
+    font-size: var(--fs-300);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Noto Serif Bold", serif;
+    font-size: inherit;
+    line-height: 1.1;
+}
+
+strong,
+b {
+    font-family: "Open Sans Bold", sans-serif !important;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-family: inherit !important;
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+    }
+}
+
+address {
+    font: inherit;
+}
