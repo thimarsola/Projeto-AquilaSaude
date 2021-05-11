@@ -5,7 +5,7 @@
             <!-- image -->
             <div class="team__row__image">
                 <picture>
-                    <source src="<?= get_template_directory_uri(); ?>/assets/images/profissionais-aquila.webp"
+                    <source srcset="<?= get_template_directory_uri(); ?>/assets/images/profissionais-aquila.webp"
                         type="image/webp">
                     <img src="<?= get_template_directory_uri(); ?>/assets/images/profissionais-aquila.png"
                         alt="Profissionais Áquila Saúde" loading='lazy'>

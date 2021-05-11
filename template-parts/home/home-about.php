@@ -34,7 +34,6 @@
                     <!-- video -->
                     <div class="about__row__information__grid__video">
                         <iframe src="https://www.youtube.com/embed/LIGar-f6TSk" title="Conheça a Clínica Áquila Saúde"
-                            frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
                     </div>
@@ -43,22 +42,28 @@
                     <!-- ceo -->
                     <div class="about__row__information__grid__ceo">
                         <picture>
-                            <source src="<?= get_template_directory_uri(); ?>/assets/images/marcos-brandao.webp"
+                            <source srcset="<?= get_template_directory_uri(); ?>/assets/images/marcos-brandao.webp"
                                 type="image/webp">
                             <img src="<?= get_template_directory_uri(); ?>/assets/images/marcos-brandao.jpg"
                                 alt="Dr. Marcos Vinícius Brandão" loading='lazy'>
                         </picture>
 
-                        <p><b>Dr. Marcos Vinícius Brandão</b></p>
-                        <p><small>Clínico Geral - Especialista em endodontia e prótese há 35 anos<br>CRO/SP
-                                30071</small></p>
+                        <!-- text -->
+                        <div class="about__row__information__grid__ceo__text">
+                            <p><b>Dr. Marcos Vinícius Brandão</b></p>
+                            <p><small>Clínico Geral - Especialista em endodontia e prótese há 35 anos<br>CRO/SP
+                                    30071</small></p>
+                        </div>
+                        <!-- end of text -->
+
                     </div>
                     <!-- end of ceo -->
 
                     <!-- clinic -->
                     <div class="about__row__information__grid__clinic">
                         <picture>
-                            <source src="<?= get_template_directory_uri(); ?>/assets/images/clinica-aquila-entrada.webp"
+                            <source
+                                srcset="<?= get_template_directory_uri(); ?>/assets/images/clinica-aquila-entrada.webp"
                                 type="image/webp">
                             <img src="<?= get_template_directory_uri(); ?>/assets/images/clinica-aquila-entrada.jpg"
                                 alt="Dr. Marcos Vinícius Brandão" loading='lazy'>

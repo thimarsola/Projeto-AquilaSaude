@@ -17,8 +17,14 @@
 
                 <a href="<?= get_template_directory_uri(); ?>/assets/images/galeria-aquila-0<?= $img; ?>.jpg"
                     class="gallery__grid__card__image">
-                    <img src="<?= get_template_directory_uri(); ?>/assets/images/galeria-aquila-0<?= $img; ?>.jpg"
-                        alt="Conheça o nosso espaço - Áquila Saúde" loading="lazy">
+
+                    <picture>
+                        <source
+                            srcset="<?= get_template_directory_uri(); ?>/assets/images/galeria-aquila-0<?= $img; ?>.webp"
+                            type="image/webp">
+                        <img src="<?= get_template_directory_uri(); ?>/assets/images/galeria-aquila-0<?= $img; ?>.jpg"
+                            alt="Conheça o nosso espaço - Áquila Saúde" loading="lazy">
+                    </picture>
                 </a>
 
                 <?php

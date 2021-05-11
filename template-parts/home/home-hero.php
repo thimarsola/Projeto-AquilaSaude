@@ -6,7 +6,7 @@
         <div class="hero__row__image">
 
             <picture>
-                <source src="<?= get_template_directory_uri(); ?>/assets/images/imagem-home.webp" type="image/webp">
+                <source srcset="<?= get_template_directory_uri(); ?>/assets/images/imagem-home.webp" type="image/webp">
                 <img src="<?= get_template_directory_uri(); ?>/assets/images/imagem-home.jpg"
                     alt="Clínica <?= SITE['name']; ?>" loading="lazy">
             </picture>
@@ -20,7 +20,7 @@
             <!-- image -->
             <div class="hero__row__content__image">
                 <picture>
-                    <source src="<?= get_template_directory_uri(); ?>/assets/images/clinica-aquila.webp"
+                    <source srcset="<?= get_template_directory_uri(); ?>/assets/images/clinica-aquila.webp"
                         type="image/webp">
                     <img src="<?= get_template_directory_uri(); ?>/assets/images/clinica-aquila.jpg"
                         alt="Clínica <?= SITE['name']; ?>" loading="lazy">

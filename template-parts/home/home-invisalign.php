@@ -13,7 +13,7 @@
                 <!-- image -->
                 <div class="invisalign__row__card__image">
                     <picture>
-                        <source src="<?= get_template_directory_uri(); ?>/assets/images/bruno-gagliasso.webp"
+                        <source srcset="<?= get_template_directory_uri(); ?>/assets/images/bruno-gagliasso.webp"
                             type="image/webp">
                         <img src="<?= get_template_directory_uri(); ?>/assets/images/bruno-gagliasso.png"
                             alt="Bruno Gagliasso - Insivalign" loading="lazy">
@@ -71,7 +71,7 @@
                 <!-- image -->
                 <div class="invisalign__row__card__image">
                     <picture>
-                        <source src="<?= get_template_directory_uri(); ?>/assets/images/aparelho-invisalign.webp"
+                        <source srcset="<?= get_template_directory_uri(); ?>/assets/images/aparelho-invisalign.webp"
                             type="image/webp">
                         <img src="<?= get_template_directory_uri(); ?>/assets/images/aparelho-invisalign.jpg"
                             alt="Bruno Gagliasso - Invisalign" loading="lazy">
