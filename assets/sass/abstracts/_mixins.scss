@@ -23,6 +23,12 @@
     }
 }
 
+@mixin bp($size) {
+    @media only screen and (max-width: $size) {
+        @content;
+    }
+}
+
 @mixin transition($key) {
     transition: $key 300ms ease-in-out;
 }
