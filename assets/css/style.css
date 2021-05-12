@@ -387,6 +387,7 @@ body {
   border: none;
   transform: scale(1);
   transition: transform 0.3s ease-in-out;
+  line-height: 1 !important;
   font-family: "Open Sans Bold", sans-serif !important;
   font-size: var(--fs-400);
   text-transform: uppercase;
@@ -1959,6 +1960,56 @@ img.mfp-img {
     margin: 0;
     flex-basis: 100%;
   }
+}
+
+.specialties__content {
+  padding: 10rem 0;
+  color: white;
+  text-align: center;
+  background-image: url("../images/bg-especialidades.svg");
+  background-size: cover;
+  background-position: top;
+}
+.specialties__content__header h2 {
+  margin-bottom: var(--fs-100);
+  font-family: "Noto Serif Bold", serif !important;
+  font-size: var(--fs-900);
+  color: var(--clr-blue-500);
+}
+.specialties__content__header p {
+  font-size: var(--fs-700);
+}
+.specialties__content__header hr {
+  margin: var(--fs-900) auto;
+  width: 12rem;
+  border: 2px solid var(--clr-blue-500);
+}
+.specialties__grid {
+  padding: 10rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  gap: calc(var(--gap) * 2);
+}
+.specialties__grid__card {
+  margin: 0;
+  padding: var(--fs-800);
+  text-align: center;
+  background: white;
+  box-shadow: 0px 0px 20px rgba(51, 51, 51, 0.15);
+}
+.specialties__grid__card__header i {
+  font-size: var(--fs-1100) !important;
+  color: var(--clr-blue-500) !important;
+}
+.specialties__grid__card__header h3 {
+  margin-top: var(--fs-500);
+  font-family: "Noto Serif Bold", serif !important;
+  font-size: var(--fs-600) !important;
+  color: var(--clr-blue-500);
+}
+.specialties__grid__card__body {
+  margin: var(--fs-100) 0 var(--fs-800) 0;
+  font-size: var(--fs-300);
 }
 
 /*# sourceMappingURL=style.css.map */
