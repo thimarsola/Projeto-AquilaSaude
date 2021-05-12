@@ -1,0 +1,84 @@
+@use "../../abstracts" as *;
+
+.team{
+    @include padding(10rem);
+    background:{
+        image: url('../images/bg-profissionais.jpg');
+        size: cover;
+        position: center;
+    }
+
+    &__row{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__image{
+            @include col-l(50%);
+        }
+
+        &__body{
+            @include col-r(50%);
+
+            &__header{
+                margin-bottom: var(--fs-800);
+
+                h2{
+                    font-family: 'Noto Serif Bold', serif !important;
+                    font-size: var(--fs-800);
+                    line-height: 1.5;
+                }
+            }
+
+            p{
+                text-align: justify;
+            }
+
+            &__link{
+                margin-top: var(--fs-1000);
+            }
+        }
+    }
+
+    //breakpoint tablet
+    @include mq(md){
+        &__row{
+            display: grid;
+            gap: calc(var(--gap) * 2);
+            justify-content: center;
+
+            &__image{
+                margin: 0;
+
+                picture{
+                    margin: 0 auto;
+                    width: 70%;
+                }
+            }
+
+            &__body{
+                margin: 0;
+                text-align: center;
+
+                p{
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    //breakpoint mobile
+    @include mq(sm){
+        background-position: right;
+        &__row{
+
+            &__image{
+                picture{
+                    margin: 0 auto;
+                    width: 90%;
+                }
+            }
+        }
+    }
+}

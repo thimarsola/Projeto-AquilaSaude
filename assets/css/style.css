@@ -2064,4 +2064,69 @@ img.mfp-img {
   }
 }
 
+.team {
+  padding: 10rem 0;
+  background-image: url("../images/bg-profissionais.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.team__row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.team__row__image {
+  flex: 0 0 calc(50% - var(--gap));
+  margin-right: var(--gap);
+}
+.team__row__body {
+  flex: 0 0 calc(50% - var(--gap));
+  margin-left: var(--gap);
+}
+.team__row__body__header {
+  margin-bottom: var(--fs-800);
+}
+.team__row__body__header h2 {
+  font-family: "Noto Serif Bold", serif !important;
+  font-size: var(--fs-800);
+  line-height: 1.5;
+}
+.team__row__body p {
+  text-align: justify;
+}
+.team__row__body__link {
+  margin-top: var(--fs-1000);
+}
+@media only screen and (max-width: 768px) {
+  .team__row {
+    display: grid;
+    gap: calc(var(--gap) * 2);
+    justify-content: center;
+  }
+  .team__row__image {
+    margin: 0;
+  }
+  .team__row__image picture {
+    margin: 0 auto;
+    width: 70%;
+  }
+  .team__row__body {
+    margin: 0;
+    text-align: center;
+  }
+  .team__row__body p {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .team {
+    background-position: right;
+  }
+  .team__row__image picture {
+    margin: 0 auto;
+    width: 90%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
