@@ -4,19 +4,13 @@
 <head>
     <meta charset="utf-8">
     <link rel="alternate" href="<?= (is_home() ? get_site_url() : get_page_link()); ?>" hreflang="x-default" />
-    <!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> -->
-
-    <?php  if (!is_404()): ?>
-    <title><?php echo(is_home()) ? SITE["name"] : the_title() . " - " . SITE["name"]; ?></title>
-    <?php else: ?>
-    <title><?= SITE["name"]; ?></title>
-    <?php endif; ?>
-
+    <!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> --> <?php  if (!is_404()): ?>
+    <title><?php echo(is_home()) ? SITE["name"] : the_title() . " - " . SITE["name"]; ?></title> <?php else: ?> <title>
+        <?= SITE["name"]; ?></title> <?php endif; ?>
     <base href="<?= get_site_url(); ?>">
     <meta name="description" content="<?= SITE["desc"]; ?>">
     <meta name="keywords" content="<?= SITE["keywords"]; ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <meta name="geo.region" content="<?= REGION["region"]; ?>" />
     <meta name="geo.placename" content="<?= REGION["placename"]; ?>" />
     <meta name="geo.position" content="<?= REGION["position"]; ?>" />
@@ -34,35 +28,25 @@
     <meta property="og:type" content="article">
     <meta property="og:url" content="<?= (is_home() ? get_site_url() : get_page_link()); ?>">
     <meta property="og:description" content="<?= SITE["desc"]; ?>">
-    <meta property="og:site_name" content="<?= SITE["name"] ?>">
-
-    <?php wp_head(); ?>
+    <meta property="og:site_name" content="<?= SITE["name"] ?>"> <?php wp_head(); ?>
 </head>
 
-<body id="home" <?php body_class(); ?>>
-    <?php
+<body id="home" <?php body_class(); ?>> <?php
     if (function_exists('custom_wp_body_open')) {
         wp_body_open();
     }
-    ?>
-
-    <h1 class="d-none"><?php echo(is_home()) ? SITE["name"] : the_title()?></h1>
-
-    <?php
+    ?> <h1 class="d-none"><?php echo(is_home()) ? SITE["name"] : the_title()?></h1> <?php
         if(!is_404()):
     ?>
-
     <!--header-->
     <header class="header p-fixed d-none">
         <div class="container">
             <!--navbar-->
             <div class="header__navbar">
-
                 <!-- brand -->
                 <a href="<?= get_home_url(); ?>" title="<?= SITE["name"]; ?>">
                     <i class="aquila-logo-topo"></i>
                 </a>
-
                 <div class="header__navbar__section">
                     <!-- toggle -->
                     <div class="header__navbar__section__toggle">
@@ -71,13 +55,11 @@
                         <div class="header__navbar__section__toggle__bar"></div>
                     </div>
                     <!-- end of toggle -->
-
                     <!-- container -->
                     <div class="header__navbar__section__container">
                         <!-- nav -->
                         <nav class="header__navbar__section__container__nav">
-                            <h2 class="d-none">Menu de Navegação</h2>
-                            <?php
+                            <h2 class="d-none">Menu de Navegação</h2> <?php
                             wp_nav_menu(array('theme_location' => 'header-home', 'container_class' => '')); 
                         ?>
                         </nav>
@@ -90,7 +72,6 @@
         </div>
     </header>
     <!--end of header-->
-
     <!-- whatsapp -->
     <div class="whatsapp">
         <div class="whatsapp__content">
@@ -102,7 +83,5 @@
         </div>
     </div>
     <!-- end of whatsapp -->
-
     <!-- main -->
-    <main>
-        <?php endif ?>
+    <main> <?php endif ?>

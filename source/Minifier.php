@@ -12,8 +12,9 @@ $homeCss->minify(dirname(__DIR__, 1) . "/assets/css/style.min.css");
  * js
  */
 $homeJs = new MatthiasMullie\Minify\JS();
-$homeJs->add(dirname(__DIR__, 1) . "/assets/js/vendors/jquery.slim.js");
+$homeJs->add(dirname(__DIR__, 1) . "/assets/js/vendors/jquery.js");
 $homeJs->add(dirname(__DIR__, 1) . "/assets/js/theme/menu.js");
+$homeJs->add(dirname(__DIR__, 1) . "/assets/js/theme/scroll.js");
 $homeJs->add(dirname(__DIR__, 1) . "/assets/js/vendors/owl.carousel.js");
 $homeJs->add(dirname(__DIR__, 1) . "/assets/js/theme/home/carousel.js");
 $homeJs->add(dirname(__DIR__, 1) . "/assets/js/vendors/jquery.magnific-popup.js");
