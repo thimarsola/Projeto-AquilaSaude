@@ -1,0 +1,84 @@
+@use '../../abstracts' as *;
+
+.invisalign{
+    @include padding(10rem);
+
+    &__row{
+        &:nth-child(2){
+            margin-bottom: 10rem;
+        }
+        &__card{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: calc(var(--gap) * 2);
+            color: white;
+            align-items: center;
+
+
+            &__body{
+                &__header{
+                    margin-bottom: var(--fs-900);
+
+                    h3{
+                        font-family: 'Noto Serif Bold', serif !important;
+                        font-size: var(--fs-900);
+                        color: var(--clr-blue-500);
+                        line-height: 1.5;
+                    }
+                }
+
+                p{
+                    text-align: justify;
+                }
+
+                &__link{
+                    margin-top: var(--fs-1000);
+                }
+            }
+        }
+    }
+
+    //breakpoint tablet
+    @include mq(md){
+        &__row{
+            &__card{
+                align-items: flex-start;
+
+                &__body{
+                    &__header{
+                        h3{
+                            font-size: var(--fs-700);
+                        }
+                    }
+                }
+            }
+        }
+    }    //breakpoint tablet
+    @include mq(sm){
+        &__row{
+
+            &:nth-child(3){
+                .invisalign__row__card{
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    .invisalign__row__card__image{
+                        order: -1;
+                    }
+                }
+            }
+
+            &__card{
+                grid-template-columns: 1fr;
+
+                &__body{
+                    &__header{
+                        h3{
+                            font-size: var(--fs-800);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
