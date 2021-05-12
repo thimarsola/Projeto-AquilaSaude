@@ -32,6 +32,7 @@
 
     &__row {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: stretch;
         height: 100%;
@@ -121,6 +122,225 @@
                     i {
                         font-size: 5rem;
                         color: var(--clr-blue-500) !important;
+                    }
+                }
+            }
+        }
+    }
+
+    // breakpoint 1440px
+    @include bp(1440px) {
+        padding-top: 15rem;
+        padding-left: 15rem;
+        &__row {
+            &__content {
+                &__image {
+                    max-height: 40rem;
+                }
+
+                &__text {
+                    max-width: 80%;
+
+                    &__header {
+                        h2 {
+                            font-size: 5rem;
+                        }
+                    }
+
+                    p {
+                        font-size: var(--fs-400);
+                    }
+                }
+            }
+        }
+    }
+
+    // breakpoint 1366px
+    @include bp(1366px) {
+        padding-top: 12rem;
+        padding-left: 12rem;
+        &__row {
+            &__content {
+                &__image {
+                    max-height: 28rem;
+                }
+
+                &__text {
+                    max-width: 85%;
+
+                    &__header {
+                        h2 {
+                            font-size: 4.2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // breakpoint 1280px
+    @include bp(1280px) {
+        padding-top: 10rem;
+        padding-left: 10rem;
+        &__row {
+            &__content {
+                &__image {
+                    max-height: 25rem;
+                }
+
+                &__text {
+                    max-width: 90%;
+
+                    &__header {
+                        h2 {
+                            // font-size: var(--fs-800);
+                            font-size: 3.8rem;
+                        }
+                    }
+
+                    p {
+                        font-size: var(--fs-300);
+                    }
+
+                    &__link {
+                        i {
+                            font-size: var(--fs-900);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // tablet
+    @include mq(md) {
+        padding-left: 10rem;
+        padding-top: 10rem;
+
+        &::before {
+            width: 50%;
+            height: 45%;
+        }
+
+        &__row {
+            &__image {
+                display: none;
+            }
+
+            &__content {
+                flex-basis: 100%;
+
+                &__image {
+                    max-height: 45rem;
+                }
+
+                &__text {
+                    max-width: 90%;
+
+                    &__header {
+                        h2 {
+                            font-size: var(--fs-1000);
+                        }
+                    }
+
+                    p {
+                        font-size: var(--fs-500);
+                    }
+
+                    &__link {
+                        i {
+                            font-size: var(--fs-1000);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // mobile
+    @include mq(sm) {
+        padding-left: 5rem;
+        height: 100vh;
+
+        &::before {
+            width: 50%;
+            height: 45%;
+        }
+
+        &__row {
+            &__content {
+                &__image {
+                    max-height: 50rem;
+                }
+
+                &__text {
+                    max-width: 90%;
+
+                    &__header {
+                        h2 {
+                            font-size: var(--fs-1000);
+                        }
+                    }
+
+                    p {
+                        font-size: var(--fs-600);
+                    }
+
+                    &__link {
+                        i {
+                            font-size: var(--fs-1000);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // breakpoint 414px
+    @include bp(414px) {
+        &__row {
+            &__content {
+                &__image {
+                    max-height: 38rem;
+                }
+
+                &__text {
+                    &__header {
+                        h2 {
+                            font-size: 4.4rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // breakpoint 390px
+    @include bp(390px) {
+        &__row {
+            &__content {
+                &__text {
+                    &__header {
+                        h2 {
+                            font-size: var(--fs-900);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // breakpoint 375px
+    @include bp(375px) {
+        &__row {
+            &__content {
+                &__image {
+                    max-height: 35rem;
+                }
+
+                &__text {
+                    p {
+                        font-size: var(--fs-400);
                     }
                 }
             }
