@@ -1,5 +1,5 @@
 $(function () {
-    $('.hotel__gallery').magnificPopup({
+    $('.gallery__grid').magnificPopup({
         delegate: 'a',
         type: 'image',
         gallery: {

@@ -10,27 +10,27 @@
         <!-- grid -->
         <div class="gallery__grid">
             <!-- card -->
-            <div class="gallery__grid__card">
-                <?php
-                    for($img=1; $img < 7; $img++){
-                ?>
+			<?php
+			for($img=1; $img < 7; $img++){
+				?>
+                <div class="gallery__grid__card">
 
-                <a href="<?= get_template_directory_uri(); ?>/assets/images/galeria-aquila-0<?= $img; ?>.jpg"
-                    class="gallery__grid__card__image">
+                    <a href="<?= get_template_directory_uri(); ?>/assets/images/galeria-aquila-0<?= $img; ?>.jpg"
+                       class="gallery__grid__card__image">
 
-                    <picture>
-                        <source
-                            srcset="<?= get_template_directory_uri(); ?>/assets/images/galeria-aquila-0<?= $img; ?>.webp"
-                            type="image/webp">
-                        <img src="<?= get_template_directory_uri(); ?>/assets/images/galeria-aquila-0<?= $img; ?>.jpg"
-                            alt="Conheça o nosso espaço - Áquila Saúde" loading="lazy">
-                    </picture>
-                </a>
+                        <picture>
+                            <source
+                                    srcset="<?= get_template_directory_uri(); ?>/assets/images/galeria-aquila-0<?= $img; ?>.webp"
+                                    type="image/webp">
+                            <img src="<?= get_template_directory_uri(); ?>/assets/images/galeria-aquila-0<?= $img; ?>.jpg"
+                                 alt="Conheça o nosso espaço - Áquila Saúde" loading="lazy">
+                        </picture>
+                    </a>
 
-                <?php
-                    }
-                ?>
-            </div>
+                </div>
+				<?php
+			}
+			?>
             <!-- end of card -->
         </div>
         <!-- end of grid -->
