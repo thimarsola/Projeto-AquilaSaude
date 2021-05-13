@@ -8,20 +8,30 @@
 
         <!-- carousel -->
         <div class="testimonial__carousel owl-carousel">
-            <?php
-                    $testimonial = file_get_contents(__DIR__ . "/../../includes/testimonial.json");
-                    $testimonialList = json_decode($testimonial, true);
+			<?php
+			$testimonial = file_get_contents(__DIR__ . "/../../includes/testimonial.json");
+			$testimonialList = json_decode($testimonial, true);
 
-                    foreach($testimonialList['testimonial'] as $testimony) :
-                ?>
-            <!-- item -->
-            <div class="testimonial__carousel__item">
-                <p><?= $testimony["description"]; ?></p>
-                <p><?= $testimony["name"]; ?></p>
-            </div>
-            <!-- end of item -->
+			foreach($testimonialList['testimonial'] as $testimony) :
+				?>
+                <!-- item -->
+                <div class="testimonial__carousel__item">
+                    <i class="aquila-testimony"></i>
+					<?php
+					foreach ($testimony["description"] as $description):
+						?>
+                        <p><?= $description ?></p>
+					<?php endforeach; ?>
 
-            <?php endforeach; ?>
+                    <!-- title -->
+                    <div class="testimonial__carousel__item__title">
+                        <p><?= $testimony["name"]; ?></p>
+                    </div>
+                    <!-- end of title -->
+                </div>
+                <!-- end of item -->
+
+			<?php endforeach; ?>
         </div>
         <!-- end of carousel -->
     </div>
