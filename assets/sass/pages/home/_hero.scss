@@ -159,8 +159,6 @@
 
     //breakpoint tablet
     @include mq(md){
-        $gap: calc(var(--gap) * 10);
-        padding-top: $gap;
 
         &::before {
             width: 70%;
@@ -192,7 +190,7 @@
 
             &__content{
                 &__image{
-                    height: 34rem;
+                    height: 38rem;
                 }
 
                 &__text{
@@ -214,7 +212,7 @@
         &__row{
             &__content{
                 &__image{
-                    height: 30rem;
+                    height: 34rem;
                 }
 
                 &__text{

@@ -6,18 +6,21 @@
     display: flex;
     align-items: center;
     width: 100%;
+    height: 18rem;
     z-index: 200;
-    //background-color: rgba(white, 0.9);
+    background: transparent;
+    @include transition(background);
+
 
     i{
-        font-size: 7rem !important;
+        font-size: 6rem !important;
         color: white !important;
+        @include transition(color);
     }
 
     &__container{
         margin: 0 auto;
-        padding: 4rem calc(var(--gap) * 2);
-        max-width: calc(156rem + var(--gap) * 2);
+        max-width: 156rem;
         width: 100%;
     }
 
@@ -33,27 +36,33 @@
                 align-items: center;
 
                 &__nav {
+                    display: flex;
+                    align-items: center;
                     ul {
                         margin: 0;
                         padding: 0;
 
                         .menu-item-has-children{
                             position: relative;
+                            cursor: pointer;
 
                             &::after{
                                 display: inline-block;
                                 content: '\25BE';
-                                color: var(--clr-dark-900);
                                 transform: rotate(0);
-                                @include transition(transform);
+                                transition: all 300ms ease-in-out;
+                            }
+
+                            &:hover::after{
+                                transition: all 300ms ease-in-out;
+                                color: var(--clr-blue-500);
                             }
                         }
 
                         .rotate{
-
                             &::after{
                                 transform: rotate(180deg);
-                                @include transition(transform);
+                                transition: all 300ms ease-in-out;
                             }
                         }
 
@@ -68,32 +77,28 @@
 
                             .sub-menu{
                                 display: none;
-                            }
-
-                            .active{
                                 position: absolute;
                                 top: 2rem;
                                 left: 0;
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                flex-direction: column;
-                                padding: 0;
-                                background: white;
-                                z-index: 200;
+                                min-width: 22rem;
+                                background-color: var(--clr-dark-900);
+                                color: white;
 
                                 li{
+                                    margin: 0;
+                                    display: block;
+                                    padding: var(--fs-100) var(--gap);
                                     background: transparent;
-                                    color: inherit;
-                                    transition: all 300ms ease-in-out;
+                                    @include transition(background);
 
                                     &:hover{
+                                        color: white !important;
                                         background: var(--clr-blue-500);
-                                        transition: all 300ms ease-in-out;
+                                        @include transition(background);
+                                    }
 
-                                        a{
-                                            color: white !important;
-                                        }
+                                    a{
+                                        color: inherit !important;
                                     }
                                 }
                             }
@@ -110,15 +115,26 @@
                             }
                         }
                     }
-                }
 
-                &__google{
-                    margin-left: var(--fs-1100);
-                    width: auto;
-                    height: 100%;
+                    &__google{
+                        margin-left: var(--fs-900);
+                        width: auto;
+                        height: 100%;
+                    }
                 }
             }
 
+        }
+    }
+
+    &--sticky{
+        background: rgba(white, .9);
+        @include transition(background);
+        box-shadow: 0 0 15px rgba(#000, .15);
+
+        i{
+            color: var(--clr-dark-900) !important;
+            @include transition(color);
         }
     }
 
@@ -128,7 +144,7 @@
                 &__toggle {
                     position: absolute;
                     top: 3.4rem;
-                    right: 3rem;
+                    right: calc(var(--gap) * 3);
                     z-index: 300;
 
                     &__bar {
@@ -136,7 +152,6 @@
 
                         &:nth-child(1) {
                             transform: rotate(45deg) translate(0.9rem, 0.9rem);
-
                             @include transition(transform);
                         }
 
@@ -159,15 +174,19 @@
                     left: 0;
                     width: 100%;
                     height: 100vh;
-                    background-color: var(--clr-neutral-900);
+                    background-color: var(--clr-dark-900);
                     z-index: 200;
 
                     &__nav {
+                        padding: 10rem 0;
                         width: 100%;
                         height: 100%;
                         display: flex;
-                        justify-content: center;
+                        flex-direction: column;
+                        justify-content: flex-start;
                         align-items: center;
+                        overflow: auto;
+
                         ul {
                             li {
                                 display: block;
@@ -177,13 +196,44 @@
                                 color: white;
                             }
                         }
+
+                        &__google{
+                            margin-left: 0;
+                            width: 10rem;
+                            height: 10rem;
+                        }
                     }
                 }
             }
         }
     }
 
+    //breakpoint 1440px
+    @include bp(1440px){
+        height: 15rem;
+
+        &__container{
+            padding: 0 calc(var(--gap) * 2) 0 calc(var(--gap) * 10);
+        }
+    }
+
+    //breakpoint 1366px
+    @include bp(1366px){
+        height: calc(var(--gap) * 7);
+
+        &__container{
+            padding: 0 calc(var(--gap) * 2) 0 calc(var(--gap) * 7);
+        }
+    }
+
+    //breakpoint tablet
     @include mq(md) {
+        &__container{
+            padding: 0 calc(var(--gap) * 3) 0 calc(var(--gap) * 7);
+        }
+
+
+
         &__navbar {
             &__section {
                 &__toggle {
@@ -219,8 +269,35 @@
 
                 &__container {
                     display: none;
+
+                    &__nav{
+
+                        ul{
+                            li{
+                                .sub-menu{
+                                    position: relative;
+                                    background-color: var(--clr-neutral-400);
+
+                                    li{
+                                        padding: 3rem;
+
+                                        &:not(last-child){
+                                            border-bottom: 1.5px solid var(--clr-neutral-600);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
+        }
+    }
+
+    //breakpoint mobile
+    @include mq(sm){
+        &__container{
+            padding: 0 calc(var(--gap) * 3);
         }
     }
 }

@@ -35,7 +35,7 @@
     if (function_exists('custom_wp_body_open')) {
         wp_body_open();
     }
-    ?> <h1 class="d-none"><?php echo(is_home()) ? SITE["name"] : the_title()?></h1> <?php
+    ?> <h1 class="d-none"><?php echo(is_home()) ? 'Clínica Áquila Saúde' : the_title()?></h1> <?php
         if(!is_404()):
     ?>
     <!--header-->
@@ -67,19 +67,19 @@
 	                                wp_nav_menu(array('theme_location' => 'header-menu', 'container_class' => ''));
                                 }
                             ?>
+
+                            <!-- google -->
+                            <div class="header__navbar__section__container__nav__google">
+                                <a rel="nofollow" href="https://g.page/r/CQLyEXBClGYaEAE/review" target="_blank" title="Avalie a Clínica Áquila Saúde">
+                                    <picture>
+                                        <source srcset="<?= get_template_directory_uri(); ?>/assets/images/avaliacao-google.webp" type="image/webp">
+                                        <img src="<?= get_template_directory_uri(); ?>/assets/images/avaliacao-google.png" alt="Avalie a Clínica Áquila Saúde" loading="lazy">
+                                    </picture>
+                                </a>
+                            </div>
+                            <!-- end of google -->
                         </nav>
                         <!-- end of nav -->
-
-                        <!-- google -->
-                        <div class="header__navbar__section__container__google">
-                            <a rel="nofollow" href="https://g.page/r/CQLyEXBClGYaEAE/review" target="_blank" title="Avalie a Clínica Áquila Saúde">
-                                <picture>
-                                    <source srcset="<?= get_template_directory_uri(); ?>/assets/images/avaliacao-google.webp" type="image/webp">
-                                    <img src="<?= get_template_directory_uri(); ?>/assets/images/avaliacao-google.png" alt="Avalie a Clínica Áquila Saúde">
-                                </picture>
-                            </a>
-                        </div>
-                        <!-- end of google -->
                     </div>
                     <!-- end of container -->
                 </div>
