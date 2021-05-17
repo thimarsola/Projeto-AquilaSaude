@@ -25,7 +25,7 @@
 <!-- end of gallery -->
 
 <!-- testimonial -->
-<?php get_template_part('template-parts/home/home', 'testimonial'); ?>
+<?php //get_template_part('template-parts/home/home', 'testimonial'); ?>
 <!-- end of testimonial -->
 
 <?php get_footer(); ?>

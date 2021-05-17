@@ -24,19 +24,18 @@
 
             <!-- social media -->
             <div class="footer__information__social">
+                <h2 class="d-none">Mídias Sociais Áquila Saúde</h2>
                 <nav>
                     <ul>
                         <li>
-                            <a rel="nofollow" href="https://facebook.com/aquilasaude" target="_blank"
-                               title="Siga-nos no Facebook">
-                                <i class="aquila-facebook"></i>
+                            <a rel="nofollow" href="https://facebook.com/aquilasaude" target="_blank" title="Siga-nos no Facebook">
+                            <i class="aquila-facebook"></i>
                             </a>
                         </li>
 
                         <li>
-                            <a rel="nofollow" href="https://instagram.com/aquilasaude" target="_blank"
-                               title="Siga-nos no Instagram">
-                                <i class="aquila-instagram"></i>
+                            <a rel="nofollow" href="https://instagram.com/aquilasaude" target="_blank" title="Siga-nos no Instagram">
+                            <i class="aquila-instagram"></i>
                             </a>
                         </li>
                     </ul>
@@ -64,8 +63,7 @@
                 <div class="footer__developer__row__goognet">
                     <p>Desenvolvido por
                         <b>
-                            <a rel="nofollow" href="<?= DEV["url"]; ?>" target="_blank"
-                               title="Agência Especializada em Marketing Digital"><?= DEV["name"]; ?></a>
+                            <a rel="nofollow" href="<?= DEV["url"]; ?>" target="_blank" title="Agência Especializada em Marketing Digital"><?= DEV["name"]; ?></a>
                         </b>
                     </p>
                 </div>
@@ -84,8 +82,7 @@
 					?>
 
                     <a rel="nofollow"
-                       href="https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2F<?= $urlBase ?>%2F"
-                       target="_blank" title="Tecnologia W3C">
+                        href="https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2F<?= $urlBase ?>%2F" target="_blank" title="Tecnologia W3C">
                         <i class="aquila-w3c"></i>
                         W3C Validator
                     </a>

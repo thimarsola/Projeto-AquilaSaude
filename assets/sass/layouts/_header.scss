@@ -281,7 +281,7 @@
                                     li{
                                         padding: 3rem;
 
-                                        &:not(last-child){
+                                        &:not(:last-child){
                                             border-bottom: 1.5px solid var(--clr-neutral-600);
                                         }
                                     }

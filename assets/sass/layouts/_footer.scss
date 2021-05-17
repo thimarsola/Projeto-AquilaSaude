@@ -4,5 +4,157 @@
     position: relative;
     top: 0;
     left: 0;
-    //color: white;
+    color: white;
+
+    &__information{
+        padding: var(--fs-1100) 0;
+        text-align: center;
+
+        i{
+            font-size: var(--fs-1100) !important;
+        }
+
+        &__menu{
+            ul{
+                margin: var(--fs-800) 0;
+                padding: 0;
+
+                li{
+                    display: inline-block;
+                    text-transform: uppercase;
+                    font-size: var(--fs-200);
+
+                    &:not(:last-child){
+                        margin-right: var(--fs-800);
+                    }
+
+                    a {
+                        position: relative;
+                        color: inherit;
+                        @include transition(color);
+
+                        &:hover {
+                            color: var(--clr-blue-500);
+                            @include transition(color);
+                        }
+                    }
+                }
+            }
+        }
+
+        &__social{
+            ul{
+                margin: var(--fs-800) 0;
+                padding: 0;
+
+                li{
+                    display: inline-block;
+                    font-size: var(--fs-700);
+
+                    &:not(:last-child){
+                        margin-right: var(--fs-800);
+                    }
+
+                    a {
+                        position: relative;
+                        color: inherit;
+                        @include transition(color);
+
+                        &:hover {
+                            color: var(--clr-blue-500);
+                            @include transition(color);
+                        }
+
+                        i{
+                            font-size: inherit !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__copyright{
+            color: var(--clr-neutral-400);
+        }
+    }
+
+    &__developer{
+        &__row{
+            padding: var(--fs-200) 0;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            line-height: 1;
+
+            &__goognet{
+                a{
+                    color: inherit;
+                    @include transition(color);
+
+                    &:hover{
+                        color: var(--clr-neutral-500);
+                        @include transition(color);
+                    }
+                }
+            }
+
+            &__validator{
+                a{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: inherit;
+                    @include transition(color);
+
+                    i{
+                        margin-right: var(--fs-100);
+                        font-size: var(--fs-600) !important;
+                    }
+
+                    &:hover{
+                        color: var(--clr-neutral-500);
+                        @include transition(color);
+                    }
+                }
+            }
+        }
+    }
+
+    //breakpoint mobile
+    @include mq(sm){
+        &__information{
+            &__menu{
+                ul{
+                    li{
+                        margin-right: 0 !important;
+                        display: block;
+
+                        &:not(:last-child){
+                            margin-bottom: var(--fs-400);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //breakpoint 375px
+    @include bp(375px){
+        &__developer{
+            &__row{
+                padding: var(--fs-300) 0;
+                text-align: center !important;
+
+                &__goognet{
+                    flex-basis: 100%;
+                    margin-bottom: var(--fs-100);
+                }
+                &__validator{
+                    flex-basis: 100%;
+                }
+            }
+        }
+    }
 }
