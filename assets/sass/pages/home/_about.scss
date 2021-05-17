@@ -30,11 +30,14 @@
 
         &__information {
             @include col-r(60%);
+            height: 100%;
 
             &__grid {
                 width: 100%;
+                height: 100%;
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
+                align-items: stretch;
                 gap: var(--gap);
 
                 &__video {
@@ -48,17 +51,17 @@
                 }
 
                 &__ceo{
-                    picture{
+                    &__image{
+                        max-width: none;
                         width: 100%;
-                        height: 25rem;
+                        max-height: 25rem;
+                        height: 100%;
 
                         img{
+                            max-width: none;
                             width: 100%;
                             height: 100%;
-                            object:{
-                                fit: cover;
-                                position: center;
-                            }
+                            object-fit: cover;
                         }
                     }
 
@@ -81,20 +84,16 @@
                 }
 
                 &__clinic{
-                    max-height: 35rem;
+                    min-height: 35rem;
+                    width: 100%;
+                    height: 100%;
 
-                    picture{
+                    img{
+                        max-width: none;
                         width: 100%;
                         height: 100%;
-
-                        img{
-                            width: 100%;
-                            height: 100%;
-                            object:{
-                                fit: cover;
-                                position: top right;
-                            }
-                        }
+                        object-fit: cover;
+                        object-position: top right;
                     }
                 }
             }
