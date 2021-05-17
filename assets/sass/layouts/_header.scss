@@ -1,15 +1,23 @@
 @use '../abstracts' as *;
 
 .header {
-    display: block;
-    position: relative;
+    //display: block;
+    position: fixed;
+    display: flex;
+    align-items: center;
     width: 100%;
     z-index: 200;
-    background-color: rgba(white, 0.9);
-    @include transition(position);
+    //background-color: rgba(white, 0.9);
 
-    picture {
-        max-width: 14rem;
+    i{
+        font-size: 7rem !important;
+        color: white !important;
+    }
+
+    &__container{
+        margin: 0 auto;
+        padding: 4rem calc(var(--gap) * 2);
+        max-width: calc(156rem + var(--gap) * 2);
         width: 100%;
     }
 
@@ -21,10 +29,33 @@
 
         &__section {
             &__container {
+                display: flex;
+                align-items: center;
+
                 &__nav {
                     ul {
                         margin: 0;
                         padding: 0;
+
+                        .menu-item-has-children{
+                            position: relative;
+
+                            &::after{
+                                display: inline-block;
+                                content: '\25BE';
+                                color: var(--clr-dark-900);
+                                transform: rotate(0);
+                                @include transition(transform);
+                            }
+                        }
+
+                        .rotate{
+
+                            &::after{
+                                transform: rotate(180deg);
+                                @include transition(transform);
+                            }
+                        }
 
                         li {
                             display: inline-block;
@@ -34,38 +65,60 @@
                                 margin-right: var(--fs-500);
                             }
 
+
+                            .sub-menu{
+                                display: none;
+                            }
+
+                            .active{
+                                position: absolute;
+                                top: 2rem;
+                                left: 0;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                flex-direction: column;
+                                padding: 0;
+                                background: white;
+                                z-index: 200;
+
+                                li{
+                                    background: transparent;
+                                    color: inherit;
+                                    transition: all 300ms ease-in-out;
+
+                                    &:hover{
+                                        background: var(--clr-blue-500);
+                                        transition: all 300ms ease-in-out;
+
+                                        a{
+                                            color: white !important;
+                                        }
+                                    }
+                                }
+                            }
+
                             a {
                                 position: relative;
                                 color: inherit;
                                 @include transition(color);
 
-                                &::after {
-                                    position: absolute;
-                                    bottom: -1rem;
-                                    left: 50%;
-                                    content: "\e900";
-                                    display: block;
-                                    font-family: "pets4ever-icon";
-                                    line-height: 1;
-                                    transform: translateX(-50%);
-                                    opacity: 0;
-                                    @include transition(opacity);
-                                }
-
                                 &:hover {
-                                    color: var(--clr-yellow-500);
+                                    color: var(--clr-blue-500);
                                     @include transition(color);
-
-                                    &::after {
-                                        opacity: 1;
-                                        @include transition(opacity);
-                                    }
                                 }
                             }
                         }
                     }
                 }
+
+                &__google{
+                    margin-left: var(--fs-1100);
+                    width: auto;
+                    height: 100%;
+                }
             }
+
         }
     }
 

@@ -61,16 +61,12 @@ i {
 }
 
 // Make images easier to work with
-img,
-picture {
+img{
     margin: 0;
     padding: 0;
     max-width: 100%;
+    height: auto;
     display: block;
-}
-
-img {
-    width: 100%;
 }
 
 // Inherit fonts for inputs and buttons

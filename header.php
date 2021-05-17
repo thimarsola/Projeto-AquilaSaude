@@ -39,8 +39,8 @@
         if(!is_404()):
     ?>
     <!--header-->
-    <header class="header p-fixed d-none">
-        <div class="container">
+    <header class="header">
+        <div class="header__container">
             <!--navbar-->
             <div class="header__navbar">
                 <!-- brand -->
@@ -59,11 +59,27 @@
                     <div class="header__navbar__section__container">
                         <!-- nav -->
                         <nav class="header__navbar__section__container__nav">
-                            <h2 class="d-none">Menu de Navegação</h2> <?php
-                            wp_nav_menu(array('theme_location' => 'header-home', 'container_class' => '')); 
-                        ?>
+                            <h2 class="d-none">Menu de Navegação</h2>
+                            <?php
+                                if(is_home()){
+	                                wp_nav_menu(array('theme_location' => 'header-home', 'container_class' => ''));
+                                }elseif (is_page()) {
+	                                wp_nav_menu(array('theme_location' => 'header-menu', 'container_class' => ''));
+                                }
+                            ?>
                         </nav>
                         <!-- end of nav -->
+
+                        <!-- google -->
+                        <div class="header__navbar__section__container__google">
+                            <a rel="nofollow" href="https://g.page/r/CQLyEXBClGYaEAE/review" target="_blank" title="Avalie a Clínica Áquila Saúde">
+                                <picture>
+                                    <source srcset="<?= get_template_directory_uri(); ?>/assets/images/avaliacao-google.webp" type="image/webp">
+                                    <img src="<?= get_template_directory_uri(); ?>/assets/images/avaliacao-google.png" alt="Avalie a Clínica Áquila Saúde">
+                                </picture>
+                            </a>
+                        </div>
+                        <!-- end of google -->
                     </div>
                     <!-- end of container -->
                 </div>
