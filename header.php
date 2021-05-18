@@ -58,7 +58,7 @@
                     <!-- container -->
                     <div class="header__navbar__section__container">
                         <!-- nav -->
-                        <nav class="header__navbar__section__container__nav">
+                        <nav class="header__navbar__section__container__nav<?= is_page() ? ' header--pages' : '' ?>">
                             <h2 class="d-none">Menu de Navegação</h2>
                             <?php
                                 if(is_home()){
@@ -91,9 +91,7 @@
     <!-- whatsapp -->
     <div class="whatsapp">
         <div class="whatsapp__content">
-            <a rel="nofollow"
-                href="https://api.whatsapp.com/send?phone=55<?= formatPhone(CONTACT["whatsapp"]["number"]); ?>&text=<?= urlencode(CONTACT["whatsapp"]["message"]); ?>"
-                target="_blank" title="Vamos conversar?">
+            <a rel="nofollow" href="https://api.whatsapp.com/send?phone=55<?= formatPhone(CONTACT["whatsapp"]["number"]); ?>&text=<?= urlencode(CONTACT["whatsapp"]["message"]); ?>" target="_blank" title="Vamos conversar?">
                 <i class="aquila-whatsapp"></i>
             </a>
         </div>

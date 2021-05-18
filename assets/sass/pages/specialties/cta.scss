@@ -1,0 +1,15 @@
+@use '../../abstracts' as *;
+
+.cta{
+    padding-bottom: var(--fs-900);
+
+    hr{
+        border-color: rgba(#000, .15);
+    }
+
+    p{
+        margin: var(--fs-900) 0;
+        text-align: justify;
+        font-size: var(--fs-500);
+    }
+}

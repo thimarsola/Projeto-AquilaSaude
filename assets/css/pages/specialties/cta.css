@@ -1,0 +1,13 @@
+.cta {
+  padding-bottom: var(--fs-900);
+}
+.cta hr {
+  border-color: rgba(0, 0, 0, 0.15);
+}
+.cta p {
+  margin: var(--fs-900) 0;
+  text-align: justify;
+  font-size: var(--fs-500);
+}
+
+/*# sourceMappingURL=cta.css.map */

@@ -1,0 +1,17 @@
+@use '../../abstracts' as *;
+
+.hero{
+    @include padding(10rem);
+    color: white;
+    text-align: center;
+    background-image: url('../images/bg-especialidade.svg');
+    background-size: cover;
+    background-position: left center;
+
+    &__header{
+        p{
+            font-family: 'Noto Serif Bold', serif !important;
+            font-size: var(--fs-1000);
+        }
+    }
+}

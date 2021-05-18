@@ -127,13 +127,22 @@
         }
     }
 
+    &--pages{
+        color: white;
+    }
+
     &--sticky{
         background: rgba(white, .9);
-        @include transition(background);
         box-shadow: 0 0 15px rgba(#000, .15);
+        color: var(--clr-dark-900) !important;
+        @include transition(background);
+
+        nav{
+            color: inherit;
+        }
 
         i{
-            color: var(--clr-dark-900) !important;
+            color: inherit !important;
             @include transition(color);
         }
     }
