@@ -11,6 +11,7 @@
         size: cover;
         position: center;
     }
+    overflow: hidden;
 
     &::before {
         position: absolute;

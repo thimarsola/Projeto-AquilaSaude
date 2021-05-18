@@ -8,6 +8,7 @@
         size: cover;
         position: top right;
     }
+    overflow: hidden;
 
     &__header{
         margin-bottom: var(--fs-1100);

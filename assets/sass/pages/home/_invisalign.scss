@@ -2,6 +2,7 @@
 
 .invisalign{
     @include padding(10rem);
+    overflow: hidden;
 
     &__row{
         &:nth-child(2){

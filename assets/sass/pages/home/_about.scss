@@ -2,6 +2,7 @@
 
 .about {
     @include padding(10rem);
+    overflow: hidden;
 
     &__row {
         width: 100%;

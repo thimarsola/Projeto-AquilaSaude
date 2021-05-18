@@ -20,7 +20,7 @@
                 <!-- end of image -->
 
                 <!-- body -->
-                <div class="invisalign__row__card__body">
+                <div class="invisalign__row__card__body invisalign__row__card__body__animation__01">
                     <!-- header -->
                     <header class="invisalign__row__card__body__header">
                         <h3>Você conhece o tratamento Invisalign<sup>&REG;</sup>?</h3>
@@ -42,7 +42,7 @@
             <!-- card -->
             <article class="invisalign__row__card">
                 <!-- body -->
-                <div class="invisalign__row__card__body">
+                <div class="invisalign__row__card__body invisalign__row__card__body__animation__02">
                     <!-- header -->
                     <header class="invisalign__row__card__body__header">
                         <h3>Quanto custa o Invisalign?</h3>

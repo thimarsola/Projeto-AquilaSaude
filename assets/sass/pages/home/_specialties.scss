@@ -1,6 +1,8 @@
 @use "../../abstracts" as *;
 
 .specialties{
+    overflow: hidden;
+
     &__content{
         @include padding(10rem);
         color: white;
