@@ -1,0 +1,38 @@
+@use '../../abstracts' as *;
+
+.team{
+    @include padding(10rem);
+
+    &__row{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+        gap: var(--fs-1100) calc(var(--gap) * 2);
+
+        &__card{
+            &__image{
+
+                width: 100%;
+
+                img{
+                    margin: 0 auto;
+                    width: 80%;
+                }
+            }
+
+            &__body{
+                margin-top: var(--fs-600);
+                text-align: center;
+
+                &__header{
+                    margin-bottom: var(--fs-100);
+
+                    h2{
+                        font-family: "Noto Serif Bold", serif !important;
+                        font-size: var(--fs-700);
+                    }
+                }
+            }
+        }
+    }
+}

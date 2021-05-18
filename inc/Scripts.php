@@ -9,6 +9,8 @@ function loadJS()
 	    wp_enqueue_script('scripts', get_template_directory_uri() . '/assets/js/script-page.min.js', [], '1.0.0', true);
     }elseif (is_page('Contato')){
 	    wp_enqueue_script('scripts', get_template_directory_uri() . '/assets/js/script-contact.min.js', [], '1.0.0', true);
+    }elseif (is_page('Profissionais')){
+	    wp_enqueue_script('scripts', get_template_directory_uri() . '/assets/js/script-team.min.js', [], '1.0.0', true);
     }
 }
 

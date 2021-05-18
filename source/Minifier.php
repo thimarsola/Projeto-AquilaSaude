@@ -21,6 +21,13 @@ $pageContactCss = new MatthiasMullie\Minify\CSS();
 $pageContactCss->add(dirname(__DIR__, 1) . "/assets/css/style-contact.css");
 $pageContactCss->minify(dirname(__DIR__, 1) . "/assets/css/style-contact.min.css");
 
+/**
+ * Page - Team
+ */
+$pageTeamCss = new MatthiasMullie\Minify\CSS();
+$pageTeamCss->add(dirname(__DIR__, 1) . "/assets/css/style-team.css");
+$pageTeamCss->minify(dirname(__DIR__, 1) . "/assets/css/style-team.min.css");
+
 
 /**
  * js
@@ -49,7 +56,6 @@ $pageJs->add(dirname(__DIR__, 1) . "/assets/js/vendors/jquery.js");
 $pageJs->add(dirname(__DIR__, 1) . "/assets/js/theme/menu.js");
 $pageJs->add(dirname(__DIR__, 1) . "/assets/js/theme/dropdown.js");
 $pageJs->add(dirname(__DIR__, 1) . "/assets/js/theme/home/sticky.js");
-$pageJs->add(dirname(__DIR__, 1) . "/assets/js/theme/scroll.js");
 $pageJs->minify(dirname(__DIR__, 1) . "/assets/js/script-page.min.js");
 
 /**
@@ -60,7 +66,16 @@ $pageContactJs->add(dirname(__DIR__, 1) . "/assets/js/vendors/jquery.js");
 $pageContactJs->add(dirname(__DIR__, 1) . "/assets/js/theme/menu.js");
 $pageContactJs->add(dirname(__DIR__, 1) . "/assets/js/theme/dropdown.js");
 $pageContactJs->add(dirname(__DIR__, 1) . "/assets/js/theme/home/sticky.js");
-$pageContactJs->add(dirname(__DIR__, 1) . "/assets/js/theme/scroll.js");
 $pageContactJs->add(dirname(__DIR__, 1) . "/assets/js/vendors/sweetalert2.all.js");
 $pageContactJs->add(dirname(__DIR__, 1) . "/assets/js/theme/contact/request.js");
 $pageContactJs->minify(dirname(__DIR__, 1) . "/assets/js/script-contact.min.js");
+
+/**
+ * Page - Team
+ */
+$pageTeamJs = new MatthiasMullie\Minify\JS();
+$pageTeamJs->add(dirname(__DIR__, 1) . "/assets/js/vendors/jquery.js");
+$pageTeamJs->add(dirname(__DIR__, 1) . "/assets/js/theme/menu.js");
+$pageTeamJs->add(dirname(__DIR__, 1) . "/assets/js/theme/dropdown.js");
+$pageTeamJs->add(dirname(__DIR__, 1) . "/assets/js/theme/home/sticky.js");
+$pageTeamJs->minify(dirname(__DIR__, 1) . "/assets/js/script-team.min.js");

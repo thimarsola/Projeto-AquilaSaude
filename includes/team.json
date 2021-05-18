@@ -1,0 +1,70 @@
+{
+  "team": [
+    {
+      "image": "dr-ale",
+      "name": "Dr. Ale Chehade Fahd Chehade",
+      "specialty": "Cirurgião Dentista – Clínico geral",
+      "registry": "CRO/SP 120569"
+    },
+    {
+      "image": "dr-bruno",
+      "name": "Dr. Bruno Frignani Sylvestre",
+      "specialty": "Cirurgião Dentista – Endodontista – Cirurgia Parendodôntica com microscopia",
+      "registry": "CRO/SP 105924"
+    },
+    {
+      "image": "dra-camila",
+      "name": "Dra. Camila C. Gallo Cabral",
+      "specialty": "Cirurgiã Dentista – Reabilitação oral e laminados",
+      "registry": "CRO/SP 103613"
+    },
+    {
+      "image": "dra-fernanda",
+      "name": "Dra. Fernanda Tochio",
+      "specialty": "Cirurgiã Dentista – Odontopediatria",
+      "registry": "CRO/SP 99868"
+    },
+    {
+      "image": "dr-luciano",
+      "name": "Dr. Luciano Pereira Dias",
+      "specialty": "Cirurgião Dentista – Prótese e estética",
+      "registry": "CRO/SP 81211"
+    },
+    {
+      "image": "dra-mariana-b",
+      "name": "Dra. Mariana Batista Lameiro",
+      "specialty": "Cirurgiã Dentista – Ortodontista",
+      "registry": "CRO/SP 99910"
+    },
+    {
+      "image": "dra-marina",
+      "name": "Dra. Marina Yuriko Honda",
+      "specialty": "Clínica Geral e Dentista Sou Smile",
+      "registry": "CRO/SP 120116"
+    },
+    {
+      "image": "dra-thais",
+      "name": "Dra. Thaís Angélica Faggiani",
+      "specialty": "Implantologista",
+      "registry": "CRO/SP 88145"
+    },
+    {
+      "image": "dra-andineia",
+      "name": "Dra. Andineia Nagao ",
+      "specialty": "Cirurgião Dentista em Clínica Geral",
+      "registry": "CRO/SP 30308"
+    },
+    {
+      "image": "dra-thais-r",
+      "name": "Dra. Thais Regina Elmadjian Borges",
+      "specialty": "Protesista",
+      "registry": "CRO/SP 102424"
+    },
+    {
+      "image": "dra-aline",
+      "name": "Dra. Aline de Oliveira T. Teixeira",
+      "specialty": "Biomédica Esteticista – Terapeuta Naturopata",
+      "registry": "CRBM/SP 14798"
+    }
+  ]
+}
