@@ -42,12 +42,12 @@ define("SOCIAL", [
  * MAIL CONNECT
  */
 define("MAIL", [
-    "host" => "mail.aquilasaude.com.br",
+    "host" => "mail.goognet.com.br",
     "port" => "587",
-    "user" => "sender@aquilasaude.com.br",
+    "user" => "sender@goognet.com.br",
     "passwd" => "Contato123*",
     "from_name" => "Áquila Saude",
-    "from_email" => "pets4everpetshop@gmail.com"
+    "from_email" => "thiago.marsola@goognet.com.br"
 ]);
 
 /**
@@ -73,7 +73,7 @@ define("CONTACT",[
         "02" => "(11) 4221-7917"
     ],
     "mail" => "atendimento@aquilasaude.com.br",
-    "address" => "Rua Piauí 140,  Santo Antônio - São Caetano do Sul - SP<br>CEP: 09541-150",
-    "addressLink" => "https://goo.gl/maps/j8bxPYUYNoL2LUhe9",
+    "address" => "Rua Piauí 140,  Santo Antônio - São Caetano do Sul - SP - CEP: 09541-150",
+    "addressLink" => "https://goo.gl/maps/zddi9FcFYmQFxZ7p6",
     "google" => "https://g.page/r/CQLyEXBClGYaEAE/review"
 ]);

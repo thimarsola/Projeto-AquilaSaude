@@ -49,7 +49,7 @@
                 </a>
                 <div class="header__navbar__section">
                     <!-- toggle -->
-                    <div class="header__navbar__section__toggle">
+                    <div class="header__navbar__section__toggle<?= is_page() ? ' toggle__pages' : '' ?>">
                         <div class="header__navbar__section__toggle__bar"></div>
                         <div class="header__navbar__section__toggle__bar"></div>
                         <div class="header__navbar__section__toggle__bar"></div>

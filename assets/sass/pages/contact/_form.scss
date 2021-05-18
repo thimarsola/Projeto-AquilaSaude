@@ -1,0 +1,147 @@
+@use "../../abstracts" as *;
+
+.form{
+    padding-bottom: 10rem;
+
+    &__row{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: calc(var(--gap) * 2);
+
+        &__information{
+            grid-column: 1/5;
+
+            &__logo{
+                margin-bottom: var(--fs-800);
+                font-size: var(--fs-1100);
+                background: linear-gradient(99.3deg, #63B8E7 9.26%, #293386 90.18%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                line-height: 1 !important;
+            }
+
+            address{
+                display: flex;
+                align-items: center;
+                text-align: justify;
+
+                &:not(:last-child){
+                    margin-bottom: var(--fs-400);
+                }
+
+                i{
+                    font-size: var(--fs-600);
+                    margin-right: var(--fs-400);
+                    color: var(--clr-blue-500)!important;
+                }
+
+                a{
+                    color: inherit;
+                    @include transition(color);
+
+                    &:hover{
+                        color: var(--clr-blue-500);
+                        @include transition(color);
+                    }
+                }
+
+            }
+        }
+
+        &__form{
+            grid-column: 5/13;
+
+            &__header{
+                margin-bottom: calc(var(--gap) * 2);
+
+                h2{
+                    font-size: var(--fs-700);
+                    color: var(--clr-blue-500);
+                }
+            }
+
+            form{
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: calc(var(--gap));
+
+                .form__row__form__group{
+                    &:nth-child(1), &:nth-child(2), &:nth-child(5), &:nth-child(6){
+                        grid-column: 1/3;
+                    }
+                }
+
+                .form__row__form__status {
+                    grid-column: 1/3;
+
+                    &--loading {
+                        margin-top: 3.2rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        img {
+                            animation: spin 2s infinite linear;
+                        }
+                    }
+
+                    @keyframes spin {
+                        from {
+                            transform: rotate(0deg);
+                        }
+
+                        to {
+                            transform: rotate(360deg);
+                        }
+
+                    }
+                }
+
+                .form__row__form__button{
+                    grid-column: 1/3;
+                    display: flex;
+                    justify-content: flex-end;
+                }
+            }
+        }
+    }
+
+    //breakpoint tablet
+    @include mq(md){
+        &__row{
+            gap: calc(var(--gap) * 3);
+            &__information{
+                grid-column: 1/6;
+                text-align: center !important;
+            }
+
+            &__form{
+                grid-column: 6/13;
+
+                form{
+                    grid-template-columns: repeat(1, 1fr);
+
+                    .form__row__form__group{
+                        grid-column: 1/3;
+                    }
+                }
+            }
+        }
+    }
+
+    //breakpoint mobile
+    @include mq(sm){
+        &__row{
+            grid-template-columns: repeat(1, 1fr);
+            &__information{
+                grid-column: 1/3;
+            }
+
+            &__form{
+                grid-column: 1/3;
+            }
+        }
+    }
+}

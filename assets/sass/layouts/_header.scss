@@ -145,6 +145,10 @@
             color: inherit !important;
             @include transition(color);
         }
+
+        .header__navbar__section__toggle__bar{
+            background-color: var(--clr-neutral-900) !important;
+        }
     }
 
     &--active {
@@ -157,7 +161,7 @@
                     z-index: 300;
 
                     &__bar {
-                        background-color: white;
+                        background-color: white !important;
 
                         &:nth-child(1) {
                             transform: rotate(45deg) translate(0.9rem, 0.9rem);
@@ -245,6 +249,7 @@
 
         &__navbar {
             &__section {
+
                 &__toggle {
                     cursor: pointer;
 
@@ -273,6 +278,12 @@
                             transform: rotate(0) translate(0);
                             @include transition(transform);
                         }
+                    }
+                }
+
+                .toggle__pages{
+                    .header__navbar__section__toggle__bar{
+                        background-color: white;
                     }
                 }
 
