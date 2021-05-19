@@ -14,4 +14,14 @@
             font-size: var(--fs-1000);
         }
     }
+
+    //breakpoint mobile
+    @include mq(sm){
+        &__header{
+            p{
+                font-family: 'Noto Serif Bold', serif !important;
+                font-size: var(--fs-900);
+            }
+        }
+    }
 }

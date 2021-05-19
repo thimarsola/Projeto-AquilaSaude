@@ -11,7 +11,7 @@
         size: cover;
         position: center;
     }
-    overflow: hidden;
+    //overflow: hidden;
 
     &::before {
         position: absolute;
@@ -191,7 +191,7 @@
 
             &__content{
                 &__image{
-                    height: 38rem;
+                    height: 36rem;
                 }
 
                 &__text{
@@ -200,7 +200,7 @@
                         margin-bottom: var(--fs-600);
 
                         h2{
-                            font-size: 5.4rem;
+                            font-size: 4.8rem;
                         }
                     }
                 }

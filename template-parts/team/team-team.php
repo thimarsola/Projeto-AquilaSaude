@@ -14,8 +14,10 @@
                 <article class="team__row__card">
                     <!-- image -->
                     <div class="team__row__card__image">
-                        <source srcset="<?= get_template_directory_uri(); ?>/assets/images/<?= $doctor['image'] ?>.webp" type="image/webp">
-                        <img src="<?= get_template_directory_uri(); ?>/assets/images/<?= $doctor['image'] ?>.png" alt="<?= $doctor['name']; ?>" loading="lazy">
+                        <picture>
+                            <source srcset="<?= get_template_directory_uri(); ?>/assets/images/<?= $doctor['image'] ?>.webp" type="image/webp">
+                            <img src="<?= get_template_directory_uri(); ?>/assets/images/<?= $doctor['image'] ?>.png" alt="<?= $doctor['name']; ?>" loading="lazy">
+                        </picture>
                     </div>
                     <!-- end of image -->
 

@@ -3,7 +3,7 @@
 $(document).ready(function () {
     $('#form').submit(function () {
         $.ajax({
-            url: 'https://localhost/aquilasaude.com.br/wp-content/themes/aquila/source/Support/Sender.php',
+            url: 'https://aquilasaude.com.br/wp-content/themes/aquila/source/Support/Sender.php',
             type: 'POST',
             data: $('#form').serialize(),
             success: function (data) {

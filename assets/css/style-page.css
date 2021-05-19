@@ -1141,6 +1141,12 @@ i {
   font-family: "Noto Serif Bold", serif !important;
   font-size: var(--fs-1000);
 }
+@media only screen and (max-width: 576px) {
+  .hero__header p {
+    font-family: "Noto Serif Bold", serif !important;
+    font-size: var(--fs-900);
+  }
+}
 
 .grid {
   padding: 10rem 0;
